@@ -1,5 +1,7 @@
 Kasutusjuhend skripti graafikud.py jaoks.
 Skript on mõeldud Jaan Teppo lõputöö raames graafikute loomiseks.
+Skripti kasutamiseks on tarvis Pythoni teeke Pandas, mis peaks kaasa tulema EstNLTK'd installeerides ja Seaborn, mis tuleks ise installeerida enne skripti jooksutamist - 
+http://seaborn.pydata.org/ ( Vaadatud 03.05.2017)
 Enne skripti jooksutamist on vaja, et oleks skripti sagedusJaMuuStatistika.py abil loodud statistika eesliitega kogu tekstide korpuse peal eesliitega kogu ja 
 välja jäetud lõpusektsioonidega tekstide peal eesliitega filtreeritud ( Vaadata sagedusJaMuuStatistika_juhend.txt ), mis peaksid olema skriptiga samas kaustas nimega
 statistika.

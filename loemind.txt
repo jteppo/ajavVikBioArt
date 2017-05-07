@@ -1,9 +1,13 @@
 Antud kaust sisaldab Jaan Teppo bakalaureusetöö "Ajaväljendid Vikipeedia biograafilistes artiklites" jaoks loodud skripte, koos nende kasutusjuhenditega.
-Skriptid on kõik loodud ja testitud Windows 10, Python versioon 3.4.3 ja EstNLTK versioon 1.4'ja peal. EstNLTK puhul on tarvilik veel uuendada timex.py faili, selleks tuleb:
+Skriptid on kõik loodud ja testitud Windows 10, Python versioon 3.4.3 ja Pythoni teeki EstNLTK versioon 1.4'ja peal. EstNLTK puhul on tarvilik veel uuendada timex.py 
+faili, selleks tuleb:
 1.) Tuleb alla laadida timex.py fail aadressilt https://github.com/estnltk/estnltk/blob/devel/estnltk/timex.py (Vaadatud 03.05.2017).
 2.) Leida üles kaust kuhu enda arvutis python on installitud, mis peaks sisaldama kausta Lib\site-packages, mis omakorda peaks sisaldama kausta estnltk ehk 
 Lib\site-packages\estnltk
 3.) Kaustas Lib\site-packages\estnltk tuleb üle kirjutada vana timex.py fail punktis 1.) alla laaditud timex.py failiga
+
+Graafikud loomiseks on kasutatud Pythoni teeke Pandas, mis peaks kaasa tulema EstNLTK installimisel ja Pythoni teeki Seaborn, mis tuleks ise installeerida
+http://seaborn.pydata.org/ (Vaadatud 03.05.2017), enne skripti graafikud.py kasutamist.
 
 Kaustas on viis põhilist skripti koos kasutusjuhendiga. 
 *biograafiad.py on mõeldud biograafiliste artiklite eraldamiseks EstNLTK Vikipeedia liidese poolt moodustatud Vikipeedia lehtedega korpuse seest. Seega on vajalik, 
