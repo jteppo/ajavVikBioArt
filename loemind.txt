@@ -35,12 +35,12 @@ kastusjärjekorda:
 
 Repositooriumis on lisaks skriptidele toodud ka kaustas statistika töö jaoks moodustatud ja töös kasutatud statistika, mis on loodud vastavalt sagedusJaMuuStatistika.py
 skriptiga Vikipeedia biograafiliste artiklite peale 24.11.2016 seisuga. Lisaks on kaustas graafikud toodud ka antud statistika peal loodud ja töös kasutatud graafikud.
-Tühjaks on jäetud kaustad wikidump, kuhu sisse peaks tulema allalaaditud Vikipeedia artiklite/lehekülgede andmekogu(XML-fail), andmekogust EstNLTK Vikipeedia liidese
-parseriga töödeldud artiklite (JSON-failide) kujude kaust eesti. Kaust corp, mis peaks sisaldama EstNTLK VIkipeedia liidese meetodiga convert töödeldud artiklite 
-kogu TXT-failidena. Kaust biograafiad, mis peaks sisaldama kausta corp peal eraldatud biograafiliste artiklite korpust, mis saadakse biograafiad.py tulemusena. Kaustad 
-kogutekstandmed, filtreeritudtekstandmed ja võrdlusandmed, mis peaksid sisaldama biograafiate korpuse peal rakendades skripti tekstJaAjaväljendid.py saadud andmete faile
-iga artikli kohta(TXT-failide kujul). Kaust võrdluskorpus, mis peaks sisaldama skripti sarnased.py käsku -moodustakorpus rakendamisel kaustale võrdlusandmed, mille 
-tulemusena saadakse vastavalt määratud piirides võrdluskorpus artiklites, mis jäävad piiride sisse.
+Repositooriumi alla laadimise järel tuleks ise luua kaustad wikidump, kuhu sisse peaks tulema allalaaditud Vikipeedia artiklite/lehekülgede andmekogu(XML-fail), 
+andmekogust EstNLTK Vikipeedia liidese parseriga töödeldud artiklite (JSON-failide) kujude kaust eesti. Kaust corp, mis peaks sisaldama EstNTLK VIkipeedia liidese 
+meetodiga convert töödeldud artiklite kogu TXT-failidena. Kaust biograafiad, mis peaks sisaldama kausta corp peal eraldatud biograafiliste artiklite korpust, mis 
+saadakse biograafiad.py tulemusena. Kaustad kogutekstandmed, filtreeritudtekstandmed ja võrdlusandmed, mis peaksid sisaldama biograafiate korpuse peal rakendades 
+skripti tekstJaAjaväljendid.py saadud andmete faile iga artikli kohta(TXT-failide kujul). Kaust võrdluskorpus, mis peaks sisaldama skripti sarnased.py käsku -moodustakorpus
+rakendamisel kaustale võrdlusandmed, mille tulemusena saadakse vastavalt määratud piirides võrdluskorpus artiklites, mis jäävad piiride sisse.
 
 Vikipeedia artiklite/lehekülgede andmekogu(ilma EstNLTK Vikipeedia liidese töötluseta), korpus biograafiliste artiklitega (moodustatud biograafiad.py skriptiga 
 24.11.2016 Vikipeedia artiklite peal), moodustatud kogu tekstide, välja jäetud sektsioonidega ja võrdluseks moodustatud andmete korpused/kaustad
