@@ -1,0 +1,6 @@
+arv	grupp
+290735	grupp 4
+1029	grupp 3
+67	grupp 2
+67	grupp 1
+1	grupp 0

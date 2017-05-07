@@ -1,0 +1,39 @@
+Kasutusjuhend skripti sarnased.py jaoks.
+Skripti kasutamiseks on vajalik, et oleks moodustatud skriptiga tekstJaAjaväljendid.py korpus(kaust) Vikipeedia artiklite vajalike andmetega.
+Antud näidetes juhendis toodud näidetes on kasutatud juhendis tekstJaAjaväljendid_juhend.txt viimase toodud näitena moodustatud korpust(kausta) võrdlusandmed.
+# Hoiatus, skripti töö võib võtta tükk aega, kui leitakse kauguseid artiklite peal, mis sisaldavad väga suures koguses(500+) ajaväljendeid, mida peab võrdlema suure korpuse
+# peal.
+1.) Luua skriptiga samasse kausta uus kaust, kuhu soovitakse paigutada võrdluskorpuse failid, näiteks uus kaust nimega võrdluskorpus.
+2.) Navigeerida käsurealt skripti kausta.
+3.) Skript on mõeldud käivitamiseks käsurealt läbi pythoni, skriptil on neli erinevat käsku: -moodustakorpus , -kaugusfunktsioon , -leiasarnased , -juhuslikud 
+4.) Esmalt tuleks käsuga -moodustakorpus luua võrdluskorpus. Käsule tuleb ette anda 5 erinevat parameetrit. 
+Esiteks korpuskaust, mille pealt võrdluskorpus moodustatakse ehk antud näites kaust võrdlusandmed.
+Teiseks kaust, kuhu võrdluskorpuse failid paigutatakse ehk antud näites kaust võrdluskorpus.
+Kolmandaks, minimaalne võrreldavate ajaväljendite arv, mida artikkel peaks sisaldama, et sobiks võrdluskorpusesse kaasata. (Täisarvuline väärtus, näiteks 10)
+Neljandaks, sünniaasta alampiir, millest hilisem peab artiklis väljendatava isiku sünniaasta olema, et artikkel kaasataks võrdluskorpusesse. (Täisarvuline väärtus, 
+näiteks 1900)
+Viiendaks, sünniaasta alampiir, millest varasem peab artiklis väljendatava isiku sünniaasta olema, et artikkel kaasataks võrdluskorpusesse. (Täisarvuline väärtus,
+näiteks 2000)
+Ehk käsureal näiteks > python sarnased.py -moodustakorpus ./võrdlusandmed/ ./võrdluskorpus/ 10 1900 2000
+
+5.) Seejärel on võrdluskorpuse peal võimalik rakendada ülejäänud käskusi.
+6.) Käsuga -kaugusfunktsioon andes ette esimeseks parameetriks artikli võrdluskorpusest, koos teega artiklini ja faililiitega ja teiseks parameetriks ette teise artikli
+võrdluskorpuse, koos teega artiklini ja faililiitega tagastatakse kahe artikli vaheline ajaväljendite põhjal arvutatud kaugus. Faili nimedes olevad tühikud tuleb
+esitada alakriipsuga (_).
+Näiteks käsurealt > python sarnased.py -kaugusfunktsioon ./võrdluskorpus/Ann_Elen_Skjelbreid.txt ./võrdluskorpus/Olena_Petrova.txt
+
+7.) Käsuga -leiasarnased, andes esimese parameetrina ette artikli võrdluskorpusest, koos kogu teega artiklini ja faililiitega, teise parameetrina ette andes võrdluskorpuse
+kausta, mille seest sarnaseid artikleid otsitakse ja kolmanda parameetrina võib anda minimaalse ajaväljendite arvu, mis kahe artikli vahel peavad kattuma, et neid lugeda 
+sarnaseks. Kui viimast parameetrit ei sisestata, siis leitakse sarnased ilma seadmata piiranguid kokku langevate ajaväljendite arvule. Seejärel väljastatakse ekraanile
+5 ajaväljendite põhjal arvutatava kauguse poolest sarnasemat artiklit, koos arvutatud kaugustega ja kattuvate ajaväljenditega.
+Näiteks käsurealt > python sarnased.py -leiasarnased ./võrdluskorpus/Ann_Elen_Skjelbreid.txt ./võrdluskorpus/ 3
+või > python sarnased.py -leiasarnased ./võrdluskorpus/Ann_Elen_Skjelbreid.txt ./võrdluskorpus/ 
+
+8.) Käsuga -juhuslikud, andes esimese parameetrina ette võrdluskorpuse(kausta) ja teise parameetrina ette arvu, mitu juhuslikult valitud artiklit soovitakse kuvada
+(täisarvuna näiteks 5) ja kolmanda parameetrina, mitu juhuslikult valitud artikliga kattuvat ajaväljendit peab leitud sarnastel artiklitel vähemalt olema(täisarvuna näiteks 3)
+väljastatakse ekraanile ette antud arvu juhuslike artiklite ajaväljendite põhjal arvutatud kauguse poolest viist sarnasemat, koos kauguse ja kokku langevate ajaväljendite
+hulgaga. Kui viimane parameeter jäetakse sisestamata, siis minimaalsete kokkulangevate ajaväljendite arvuks võetakse 0, kui kaks viimast parameetrit jäetakse sisestamata,
+siis väljastatakse 1 juhuslikult valitud artikkel, mille sarnastel peab minimaalselt 0 kokkulangevat ajaväljendit olema.
+Näiteks käsurealt > python sarnased.py -juhuslikud ./võrdluskorpus/ 5 3
+või > python sarnased.py -juhuslikud ./võrdluskorpus/ 5 
+või > python sarnased.py -juhuslikud ./võrdluskorpus/ 

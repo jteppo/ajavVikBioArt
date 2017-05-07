@@ -1,0 +1,7 @@
+arv	type
+Absoluutseid "DATE" tüüpi ajaväljendeid: 438189
+relatiivseid "DATE" tüüpi ajaväljendeid: 49260
+487449	DATE
+83475	DURATION
+2842	TIME
+1015	SET

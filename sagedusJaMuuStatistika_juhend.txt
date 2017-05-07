@@ -1,0 +1,45 @@
+Kasutusjuhend skripti sagedusJaMuuStatistika.py kasutamiseks.
+Enne skripti kasutamist peab olema vastavalt skriptiga tekstJaAjaväljendid.py moodustatud kaust või kaustad andmete failidega, mille peal hakatakase statistikat moodustama.
+
+1.) Veenduda, et skriptiga samas kaustas asub kaust statistika, kui ei, siis luua antud kaust.
+2.) Veenduda, et kausta statistika sees asub kaust lisa, kui ei, siis luua antud kaust.
+3.) Navigeerida käsurealt kausta, kus asub skript tekstJaAjaväljendid.py.
+4.) Käivitada käsurealt skript läbi pythoni, andes esimeseks argumendiks andmete kausta, teiseks argumendiks andmete täpsustuse, mis saab iga moodustatava statistikafaili
+eesliiteks( Eesliitena soovitavalt kasutada kogu ja filtreeritud, nagu all toodud näites, sest graafikute moodustamise skript töötab nende eesliidetega statistika failidega)
+ja soovi korral kolmandaks argumendiks -lisa, kui soovitakse ka lisa statistika(mis töö raames valmis, kuid töös ei kasutatud) moodustamist.
+Näited käsurea käskudest töö autorilt:
+> python sagedusJaMuuStatistika.py ./kogutekstandmed/ kogu
+või > python sagedusJaMuuStatistika.py ./kogutekstandmed/ kogu -lisa
+või > python sagedusJaMuuStatistika.py ./filtreeritudtekstandmed/ filtreeritud
+või > python sagedusJaMuuStatistika.py ./filtreeritudtekstandmed/ filtreeritud -lisa 
+
+Skripti ühe käivitamise tulemusena peaks väljastatama käsurea ekraanile eraldi ridadele artiklite arv, millel oli sünniaasta määramata, aga surma-aasta määratud,
+artiklite arv, millel surma-aasta määramata, aga sünniaasta peale aastat 1915, varaseima sünniaastaga artikli sünniaasta ja artikli nimi, hiliseima sünniaastaga 
+artikli sünniaasta ja nimi, absoluutsete "DATE" tüüpi ajaväljendite arv, relatiivsete "DATE" tüüpi ajaväljendite arv. Lisaks peaks kausta statistika tekkima 21 faili
+vastavalt: 
+- Ajaväljendite tüüpide/liikide sagedusloendid vastavalt failidesse sagedusloendtype.txt ja sagedusloendtype.csv, sagedusloendtype.txt sisaldab ja "DATE" absoluutsete ja
+relatiivsete arve;
+- Aastaarvuliste ajaväljendite sajandid sagedusloendid vastavalt failidesse sagedusloendsajandid.txt ja sagedusloendsajandid.csv
+- Sünniaastate sagedusloendid vastavalt failidesse sünniaastad.txt ja sünniaastad.csv
+- Surma-aastate sagedusloendid vastavalt failidesse surmaaastad.txt ja surmaaastad.csv
+- Ajaväljendite granulaarsuste sagedusloendid vastavalt failidesse granulaarsus.txt ja granulaarsus.csv
+- 19. sajandi kümnendite sagedusloendid vastavalt failidesse sajand19kümnendid.txt ja sajand19kümnendid.csv
+- 20. sajandi kümnendite sagedusloendid vastavalt failidesse sajand20kümnendid.txt ja sajand20kümnendid.csv
+- 21. sajandi kümnendite sagedusloendid vastavalt failidesse sajand21kümnendid.txt ja sajand21kümnendid.csv
+- Sünniaastate sajandite sagedusloendid vastavalt failidesse sünniaastadsajandid.txt ja sünniaastadsajandid.csv
+- Sünniaastate histogrammi jaoks loodud loendi faili sünniaastadhistogramm.csv
+- Aastaarvuliste ajaväljendite histogrammi jaoks loodud loendi faili aastadhistogramm.csv
+- Artiklite ajaväljendite arv ja vastava artikli sünniaasta faili ajaväljendidjasünniaasta.csv
+ja parameetri -lisa kasutamisel kausta lisa tekkima 16 faili:
+- Ajaväljendite tekstide sagedusloendid vastavalt failidesse sagedusloendtext.txt ja sagedusloendtext.csv
+- Ajaväljendite väärtuste sagedusloendid vastavalt failidesse sagedusloendvalue.txt ja sagedusloendvalue.csv
+- Grupi 0( määramata sünniaastaga artiklite) aastaarvuliste ajaväljendite jagunemise sagedusloendid vastavalt failidesse grupi0jaotus.txt ja grupi0jaotus.csv
+- Grupi 1( 2 kohalise sünniaastaga artiklite) aastaarvuliste ajaväljendite jagunemise sagedusloendid vastavalt failidesse grupi1jaotus.txt ja grupi1jaotus.csv
+- Grupi 2( 3 kohalise sünniaastaga artiklite) aastaarvuliste ajaväljendite jagunemise sagedusloendid vastavalt failidesse grupi2jaotus.txt ja grupi2jaotus.csv
+- Grupi 3( 4 kohalise sünniaastaga, 1900 varasemad, artiklite) aastaarvuliste ajaväljendite jagunemise sagedusloendid vastavalt failidesse grupi3jaotus.txt ja 
+grupi3jaotus.csv
+- Grupi 4( 1900 hilisemad sünniaastaga artiklite) aastaarvuliste ajaväljendite jagunemise sagedusloendid vastavalt failidesse grupi4jaotus.txt ja grupi4jaotus.csv
+- Artiklite sõnade arvu ja ajaväljendite arvu failidesse sõnadejaajaväljenditearv.txt ja sõnadejaajaväljenditearv.csv
+
+Enamus sagedusloendeid on nii TXT-failidena kui ka CSV-failidena. Seda sellepärast, et töö autori arust oli parem TXT-i failidest lugeda, uurida ja CSV-faile kasutas
+töö autor Pythoni teegi pandas abil sisse lugemiseks ja seejärel Pythoni teegi Seaborn abil graafikute moodustamiseks.

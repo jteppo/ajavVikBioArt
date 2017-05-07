@@ -1,0 +1,11 @@
+arv	kümnend
+88871	2000-ndad
+43357	2010-ndad
+430	2020-ndad
+21	2030-ndad
+11	2080-ndad
+10	2090-ndad
+10	2040-ndad
+8	2060-ndad
+7	2070-ndad
+6	2050-ndad

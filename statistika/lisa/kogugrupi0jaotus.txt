@@ -1,0 +1,5 @@
+arv	grupp
+11198	grupp 4
+7381	grupp 3
+344	grupp 2
+59	grupp 1

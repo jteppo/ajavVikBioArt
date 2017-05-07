@@ -1,0 +1,6 @@
+arv	grupp
+85319	grupp 3
+84473	grupp 4
+165	grupp 2
+46	grupp 1
+1	grupp 0

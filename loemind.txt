@@ -1,0 +1,43 @@
+Antud kaust sisaldab Jaan Teppo bakalaureusetöö "Ajaväljendid Vikipeedia biograafilistes artiklites" jaoks loodud skripte, koos nende kasutusjuhenditega.
+Skriptid on kõik loodud ja testitud Windows 10, Python versioon 3.4.3 ja EstNLTK versioon 1.4'ja peal. EstNLTK puhul on tarvilik veel uuendada timex.py faili, selleks tuleb:
+1.) Tuleb alla laadida timex.py fail aadressilt https://github.com/estnltk/estnltk/blob/devel/estnltk/timex.py (Vaadatud 03.05.2017).
+2.) Leida üles kaust kuhu enda arvutis python on installitud, mis peaks sisaldama kausta Lib\site-packages, mis omakorda peaks sisaldama kausta estnltk ehk 
+Lib\site-packages\estnltk
+3.) Kaustas Lib\site-packages\estnltk tuleb üle kirjutada vana timex.py fail punktis 1.) alla laaditud timex.py failiga
+
+Kaustas on viis põhilist skripti koos kasutusjuhendiga. 
+*biograafiad.py on mõeldud biograafiliste artiklite eraldamiseks EstNLTK Vikipeedia liidese poolt moodustatud Vikipeedia lehtedega korpuse seest. Seega on vajalik, 
+et oleks enne skripti kasutamist läbitud vastavad sammud, mis on toodud EstNLTK Vikipeedia liidese juhendis - https://estnltk.github.io/estnltk/1.4/tutorials/wikipedia.html
+(Vaadatud 03.05.2017). Täpsemalt kirjutatud biograafiad_juhend.txt failis.
+*tekstJaAjaväljendid.py on mõeldud vastavalt biograafiad.py skriptiga moodustatud biograafiate korpuse pealt tekstide eraldamiseks ja nende peal ajaväljendite märgendamiseks,
+skripti tulemused salvestatakse uude kausta, et ajaväljendite märgendamist ei peaks kordama. Seega on eeldatud, et eelnevalt on Biograafiad.py abil moodustaud korpus
+Vikipeedia biograafiliste artiklitega(TXT-failide kujul). Täpsemalt kirjutatud tekstJaAjaväljendid_juhend.txt failis.
+*sagedusJaMuuStatistika.py on mõeldud ajaväljendite põhise statistika moodustamiseks, kus statistika, mis koosneb peamiselt erinevatest sagedusloenditest salvestatakse
+erinevate failidena kausta statistika. Skripti kasutamiseks on ette nähtud, et ennem on skripti tekstJaAjaväljendid.py abil moodustatud andmete kaust, mis on moodustatud
+Vikipeedia biograafiliste artiklite andmetest, kus iga artikli andmed on salvestatud eraldi tekstifailidesse. Täpsemalt kirjutatud sagedusJaMuuStatistika_juhend.txt failis.
+*graafikud.py on mõeldud bakalaureusetöös kasutatud graafikute moodustamiseks vastavalt kaustas statistika olevatele andmete. Seega on eeldatud, et eelnevalt on moodustatud
+statistika kasutades skripti sagedusJaMuuStatistika.py. Täpsemalt kirjutatud graafikud_juhend.txt failis.
+*sarnased.py on mõeldud võrdluskorpuse moodustamiseks ja kas valitud artikli või juhuslikult valitud artiklile ajaväljendite põhjal arvutatud kauguse läbi viie sarnasema
+artikli leidmiseks. Võrdluskorpuse moodustamiseks on vajalik, et oleks moodustatud andmetekorpus(kaust) Vikipeedia biograafiliste artiklite peal kasutades skripti 
+tekstJaAjaväljendid.py. Täpsemalt kirjutatud sarnased_juhend.txt failis.
+
+Kõik skriptid on mõeldud käivitamiseks käsurealt. Skriptide korrektseks tööks ja vigade vältimiseks tuleks järgida vastavaid juhendeid, juhendites toodud näiteid ja 
+kastusjärjekorda:
+1.) Biograafiad.py
+2.) tekstJaAjaväljendid.py
+3.) sagedusJaMuuStatistika.py
+4.) graafikud.py
+5.) sarnased.py
+
+Repositooriumis on lisaks skriptidele toodud ka kaustas statistika töö jaoks moodustatud ja töös kasutatud statistika, mis on loodud vastavalt sagedusJaMuuStatistika.py
+skriptiga Vikipeedia biograafiliste artiklite peale 24.11.2016 seisuga. Lisaks on kaustas graafikud toodud ka antud statistika peal loodud ja töös kasutatud graafikud.
+Tühjaks on jäetud kaustad wikidump, kuhu sisse peaks tulema allalaaditud Vikipeedia artiklite/lehekülgede andmekogu(XML-fail), andmekogust EstNLTK Vikipeedia liidese
+parseriga töödeldud artiklite (JSON-failide) kujude kaust eesti. Kaust corp, mis peaks sisaldama EstNTLK VIkipeedia liidese meetodiga convert töödeldud artiklite 
+kogu TXT-failidena. Kaust biograafiad, mis peaks sisaldama kausta corp peal eraldatud biograafiliste artiklite korpust, mis saadakse biograafiad.py tulemusena. Kaustad 
+kogutekstandmed, filtreeritudtekstandmed ja võrdlusandmed, mis peaksid sisaldama biograafiate korpuse peal rakendades skripti tekstJaAjaväljendid.py saadud andmete faile
+iga artikli kohta(TXT-failide kujul). Kaust võrdluskorpus, mis peaks sisaldama skripti sarnased.py käsku -moodustakorpus rakendamisel kaustale võrdlusandmed, mille 
+tulemusena saadakse vastavalt määratud piirides võrdluskorpus artiklites, mis jäävad piiride sisse.
+
+Vikipeedia artiklite/lehekülgede andmekogu(ilma EstNLTK Vikipeedia liidese töötluseta), korpus biograafiliste artiklitega (moodustatud biograafiad.py skriptiga 
+24.11.2016 Vikipeedia artiklite peal), moodustatud kogu tekstide, välja jäetud sektsioonidega ja võrdluseks moodustatud andmete korpused/kaustad
+(Moodustatud tekstJaAjaväljendid.py skriptiga eelmainitud biograafiliste artiklite peal) on toodud aadressil: 

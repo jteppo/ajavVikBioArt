@@ -1,0 +1,18 @@
+Juhend skripti biograafiad.py kasutamiseks.
+Skript on mõeldud kasutamiseks käsurealt.
+Enne skripti kasutamist tuleb EstNLTK Vikipeedia liidese abil vastavalt juhendile 
+https://estnltk.github.io/estnltk/1.4/tutorials/wikipedia.html (Vaadatud 03.05.2017)
+lahti harutada Vikipeedia artiklite sisutõmmis estnltk.wiki.parser ja seejärel estnltk.wiki.convert
+abil, et tekiks kaks kausta, millest esimene sisaldab iga Vikipeedia artiklite kohta .JSON faili ja
+teine sisaldab iga Vikipeedia artikli kohta .TXT faili. Nende failide seas peab olema fail Biograafiad.txt
+
+Esmalt tuleks luua kaust, kuhu soovitakse biograafiad liigutada
+Seejärel saab läbi käsurea ja pythoni käivitada skripti biograafiad.py andes esimeseks argumendiks
+kausta, mis saadi estnltk.wiki.convert abil ja mis sisaldab Vikipeedia artikleid .TXT kujul ja teiseks
+argumendiks kausta kuhu soovitakse biograafiad liigutada. 
+Näiteks käsurea sisend > python biograafiad.py ./corp/ ./biograafiad/ 
+Mille tulemusena, kui skriptiga samas kaustas asub kaust corp, mis sisaldab Vikipeedia artikleid .TXT kujul
+peaks liigutatama sellest kaustast biograafiate loendites asuvad artiklid skriptiga samas kaustas asuvasse
+kausta biograafiad.
+
+! Hoiatus, skripti töö võib tükk aega võtta erinevalt kasutatava arvuti võimsusest, töö autoril võttis umbes ~ 30 min

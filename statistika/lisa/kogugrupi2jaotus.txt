@@ -1,0 +1,5 @@
+arv	grupp
+3109	grupp 2
+437	grupp 4
+436	grupp 3
+13	grupp 1

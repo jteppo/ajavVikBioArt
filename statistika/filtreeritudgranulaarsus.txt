@@ -1,0 +1,5 @@
+arv	granulaarsus
+339057	aasta
+83030	päev
+16038	kuu
+64	nädal

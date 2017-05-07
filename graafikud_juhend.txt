@@ -1,0 +1,60 @@
+Kasutusjuhend skripti graafikud.py jaoks.
+Skript on mõeldud Jaan Teppo lõputöö raames graafikute loomiseks.
+Enne skripti jooksutamist on vaja, et oleks skripti sagedusJaMuuStatistika.py abil loodud statistika eesliitega kogu tekstide korpuse peal eesliitega kogu ja 
+välja jäetud lõpusektsioonidega tekstide peal eesliitega filtreeritud ( Vaadata sagedusJaMuuStatistika_juhend.txt ), mis peaksid olema skriptiga samas kaustas nimega
+statistika.
+
+1.) Veenduda, et skriptiga samas kaustas asub kaust graafikud, kui ei, siis luua vastav kaust.
+2.) Veenduda, et skriptiga samas kaustas asuvas kaustas graafikud, oleks kaust lisa, kui ei, siis luua vastav kaust.
+3.) Navigeerida käsurealt skripti kausta.
+4.) Läbi pythoni käivitada skript andes argumendiks vastavalt:
+# Töös otseselt kasutatud graafikute jaoks
+1.) Sünniaastate histogrammi loomiseks: -sünnihistogramm 
+Näiteks > python graafikud.py -sünnihistogramm
+
+2.) Kogu tekstide aastaarvuliste ajaväljendite histogrammi loomiseks: -koguaastadhistogramm 
+Näiteks > python graafikud.py -koguaastadhistogramm
+
+3.) 10 enam levinud surma-aasta graafiku loomiseks: -surmaaastadgraafik
+Näiteks > python graafikud.py -surmaaastadgraafik
+
+4.) Sünniaastate ja vastavate artiklite ajaväljendite arvu kogu tekstide korpusel graafiku loomiseks: -koguajaväljendeidjasünniaastadgraafik
+Näiteks > python graafikud.py -koguajaväljendeidjasünniaastadgraafik
+
+5.) 19. sajandi kümnendite jagunemise kogu tekstide korpuse peal graafiku loomiseks: -kogusajand19kümnendidgraafik
+Näiteks > python graafikud.py -kogusajand19kümnendidgraafik
+
+6.) 20. sajandi kümnendite jagunemise kogu tekstide korpuse peal graafiku loomiseks: -kogusajand20kümnendidgraafik
+Näiteks > python graafikud.py -kogusajand20kümnendidgraafik
+# Töös mitte esitatud, kuid siiski töö käigus loodud graafikute jaoks. (Võib puududa esitamiseks sobilikku viimistlust)
+7.) 10 enam levinud väärtuse välja jäetud sektsioonidega tekstide peal graafiku loomiseks: -filtreeritudvaluegraafik
+Näiteks > python graafikud.py -filtreeritudvaluegraafik
+
+8.) 10 enam levinud väärtuse kogu tekstide peal graafiku loomiseks: -koguvaluegraafik
+Näiteks > python graafikud.py -koguvaluegraafik
+
+9.) 10 enam levinud sünniaastate graafiku loomiseks: -sünniaastadgraafik
+Näiteks > python graafikud.py -sünniaastadgraafik
+
+10.) Sõnade arvude jaotus ja vastavate ajaväljendite arvude jaotus graafiku loomiseks: -sõnujaajaväljendeidgraafik
+Näiteks > python graafikud.py -sõnujaajaväljendeidgraafik
+
+11.) Sünniaastate ja ajaväljendite jaotus välja jäetud sektsioonidega korpuse peal graafiku loomiseks: -filtreeritudajaväljendeidjasünniaastadgraafik
+Näiteks > python graafikud.py -filtreeritudajaväljendeidjasünniaastadgraafik
+
+12.) Välja jäetud sektsioonidega korpuse sajandite jaotuse graafiku loomiseks: -filtreeritudsajandidgraafik
+Näiteks > python graafikud.py -filtreeritudsajandidgraafik
+
+13.) Kogu tekstidega korpuse sajandite jaotuse graafiku loomiseks: -kogusajandidgraafik
+Näiteks > python graafikud.py -kogusajandidgraafik
+
+14.) 19. sajandi kümnendite jaotuse graafiku jaoks välja jäetud lõpusektsioonidega teksti peal graafiku loomiseks: -filtreeritudsajand19kümnendidgraafik
+Näiteks > python graafikud.py -filtreeritudsajand19kümnendidgraafik
+
+15.) 20. sajandi kümnendite jaotuse graafiku jaoks välja jäetud lõpusektsioonidega teksti peal graafiku loomiseks: -filtreeritudsajand20kümnendidgraafik
+Näiteks > python graafikud.py -filtreeritudsajand20kümnendidgraafik
+
+16.) Välja jäetud lõpusektsioonidega tekstide aastaarvuliste ajaväljendite histogrammi loomiseks graafiku loomiseks: -filtreeritudaastadhistogramm
+Näiteks > python graafikud.py -filtreeritudaastadhistogramm
+
+

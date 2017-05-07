@@ -1,0 +1,5 @@
+arv	grupp
+2435	grupp 2
+286	grupp 3
+54	grupp 4
+13	grupp 1
