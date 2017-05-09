@@ -161,7 +161,7 @@ def sünniJaSurmaAastadSagedus(andmed):
     # Prindime välja varaseima sünniaastaga artikli detailid
     print("Varaseim sünniaasta - " + varaseimsünd+ " - " + varaseimsündnimi)
     # Sama ka hiliseima sünniaastaga artikli puhul
-    print("Hiliseim sünniaasta - " + hiliseimsünd+ " - " + varaseimsündnimi)
+    print("Hiliseim sünniaasta - " + hiliseimsünd+ " - " + hiliseimsündnimi)
     # Tagastame sünniaastate sagedussõnastiku, surmaaastate sagedussõnastiku, sünniaastate histogrammi loendi, sünniaastate sajandite sagedussõnastiku.
     return (sünniaastad,surmaaastad,histogramlistsünd,sünniaastadsajandid)
 
