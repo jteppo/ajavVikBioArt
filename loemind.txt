@@ -9,10 +9,11 @@ Lib\site-packages\estnltk
 Graafikud loomiseks on kasutatud Pythoni teeke Pandas, mis peaks kaasa tulema EstNLTK installimisel ja Pythoni teeki Seaborn, mis tuleks ise installeerida
 http://seaborn.pydata.org/ (Vaadatud 03.05.2017), enne skripti graafikud.py kasutamist.
 
-Windowsiga käsurealt töötades võib EstNLTK Vikipeedia liidesega või antud skriptidega töötades vaheapeal esineda UnicodeEncodeError, sellisel juhul tuleks
-käsurealt sisestada:
+Windowsiga käsurealt töötades võib EstNLTK Vikipeedia liidesega või antud skriptidega töötades vaheapeal esineda UnicodeEncodeError või esineda vigasid andmete
+lugemisel peale andmete kokkupakkimist ja lahtipakkimist näiteks skripti sarnased.py kasutades, seega tuleks enne kasutamist käsurealt sisestada:
 set PYTHONIOENCODING="UTF-8"  
 set chcp=65001
+
 
 Kaustas on viis põhilist skripti koos kasutusjuhendiga. 
 *biograafiad.py on mõeldud biograafiliste artiklite eraldamiseks EstNLTK Vikipeedia liidese poolt moodustatud Vikipeedia lehtedega korpuse seest. Seega on vajalik, 
