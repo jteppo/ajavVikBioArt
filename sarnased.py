@@ -388,7 +388,7 @@ if __name__ == "__main__":
         elif(p=="-leiasarnased"):
             try:
                 artikkel1 = sys.argv[2].replace("_"," ")
-                võrdluskorpus = sys.argv[3]
+                võrdluskorpus1 = sys.argv[3]
             except IndexError:
                 print("Ette antud puudulik arv argumente antud käsu täitmiseks, palun vaadata skripti kasutusjuhendit failist sarnased_juhend.txt!")
                 sys.exit(-1)
