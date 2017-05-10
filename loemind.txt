@@ -49,4 +49,5 @@ rakendamisel kaustale võrdlusandmed, mille tulemusena saadakse vastavalt määratu
 
 Vikipeedia artiklite/lehekülgede andmekogu(ilma EstNLTK Vikipeedia liidese töötluseta), korpus biograafiliste artiklitega (moodustatud biograafiad.py skriptiga 
 24.11.2016 Vikipeedia artiklite peal), moodustatud kogu tekstide, välja jäetud sektsioonidega ja võrdluseks moodustatud andmete korpused/kaustad
-(Moodustatud tekstJaAjaväljendid.py skriptiga eelmainitud biograafiliste artiklite peal) on toodud aadressil: 
+(Moodustatud tekstJaAjaväljendid.py skriptiga eelmainitud biograafiliste artiklite peal) on kokkupakitult kättesaadav aadressil: 
+https://www.dropbox.com/s/sfi10vjcro2ed1f/ajavVikBioArt2.zip?dl=0 (Vaadatud 09.05.2017)
